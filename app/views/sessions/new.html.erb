@@ -1,0 +1,14 @@
+<div class='login-page'>
+  <div class='form'>
+    <h1>Log In for PM Dashboard Access</h1>
+    <div class='log-in-form'>
+      <%= form_for(:session, url: login_path) do |f| %>
+        <%= f.label :username %><br/>
+        <%= f.text_field :username, placeholder: "username" %><br/>
+        <%= f.label :password %><br/>
+        <%= f.password_field :password, placeholder: 'password' %><br/>
+        <%= f.submit "Log In" %>
+      <% end %>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,22 @@
+.cards {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  font-family: 'Nobile', cursive;
+}
+.card_content {
+  border: 0.5px solid black;
+  box-shadow: 2px 2px 2px grey;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  text-align: left;
+  max-width: 15rem;
+  margin: 10px;
+  overflow: hidden;
+}
+h3 {
+  font-family: 'Nobile', cursive;
+  font-size: 20px;
+  color: $font-color;
+  font-weight: bold;
+}

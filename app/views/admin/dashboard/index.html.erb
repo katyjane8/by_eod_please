@@ -1,8 +1,11 @@
 <h4>Welcome PM!</h4>
-<% @board.each do |result| %>
-<%= result.id %><br>
-<%= result.name %><br>
-<%= result.dateLastActivity %><br>
-<%= result.badges %><br>
-
-<% end %>
+<div class="cards">
+  <% @board.each do |result| %>
+    <div class="card_content">
+      <h3><%= result.name %><br> </h3>
+      Card ID: <%= result.id %><br>
+      Last Activity: <%= result.dateLastActivity %><br>
+      <%= result.badges %><br>
+    </div>
+  <% end %>
+</div>

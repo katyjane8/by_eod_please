@@ -1,0 +1,133 @@
+$body-bg: #EAEAEA;
+$form-bg: #73628A;
+$white: #ffffff;
+
+$main: #313D5A;
+$main-light: lighten($main,5%);
+$main-dark: darken($main,5%);
+
+$purple-light: #CBC5EA;
+$gray: #ddd;
+$font-color: #183642;
+
+$thin: 300;
+$normal: 400;
+$bold: 600;
+$br: 4px;
+
+
+body {
+  background:$body-bg;
+  font-family: 'Corben', cursive;
+}
+body.show {
+  background-color: #d5e7e9;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+a {
+  color: $font-color;
+  text-decoration: none;
+}
+h3 {
+  text-align:center;
+  color:$white;
+  font-weight:$thin;
+  margin:0 0 40px;
+  font-size: 30px;
+}
+.form {
+  text-align: center;
+  color: $main;
+  background: $form-bg;
+  padding: 40px;
+  max-width: 700px;
+  margin: 50px auto;
+  border-radius: $br;
+  box-shadow:0 4px 10px 4px $form-bg;
+}
+.button {
+  margin: 5px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 200px;
+  text-align: center;
+  a {
+    background:$main;
+    padding: 1em 2em;
+    font-size: .9em;
+    margin: 1em;
+    color: $white;
+    text-decoration: none;
+    flex-grow: 1;
+    text-align: center;
+    transition: .5s ease;
+    &:hover {
+      color:$font-color;
+    }
+  }
+}
+.container {
+  background-color: $white;
+  padding: 10px;
+  width: 30%;
+  margin: 10px;
+}
+.field-wrap {
+  position: relative;
+  margin-bottom: 40px;
+}
+label {
+  font-family: 'Nobile', Helvetica, Arial, sans-serif;
+  display: none;
+}
+input, textarea {
+  font-size: 22px;
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 5px 10px;
+  background: none;
+  background-image: none;
+  border: 1px solid $purple-light;
+  color: $white;
+  border-radius: 0;
+  transition:border-color .25s ease, box-shadow .25s ease;
+  &:focus {
+		outline:0;
+		border-color:$main;
+  }
+}
+textarea {
+  font-family: 'Nobile', Helvetica, Arial, sans-serif;
+  border:2px solid $purple-light;
+  resize: vertical;
+}
+.sub-btn {
+  font-family: 'Nobile', Helvetica, Arial, sans-serif;
+  text-align: center;
+  background:$main;
+  margin: 10px auto;
+  max-width: 320px;
+}
+.nav {
+  li {
+    float: right;
+    padding: 14px 16px;
+    text {
+    color: $white;
+    align: center;
+    decoration: none;
+    }
+  }
+  li a:hover {
+    background-color: #111;
+  }
+  overflow: hidden;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: $main;
+}

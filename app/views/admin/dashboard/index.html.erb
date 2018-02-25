@@ -1,5 +1,8 @@
 <h4>Welcome PM!</h4>
-<%= @board[:id] %>
-<%= @board[:dateLastActivity] %>
-<%= @board[:name] %>
-<%= @board[:badges] %>
+<% @board.each do |result| %>
+<%= result.id %><br>
+<%= result.name %><br>
+<%= result.dateLastActivity %><br>
+<%= result.badges %><br>
+
+<% end %>

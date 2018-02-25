@@ -1,24 +1,12 @@
-# README
+# By EOD Please! 
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+"By EOD please!" is a project manager dashboard for business use. API integration with Trello and Google Home makes this a unique tool for PMs to get updates from developers without valueable time. 
 
 Things you may want to cover:
-
 * Ruby version
-
 * System dependencies
-
 * Configuration
-
 * Database creation
-
 * Database initialization
-
 * How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
 * Deployment instructions
-
-* ...

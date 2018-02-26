@@ -1,11 +1,16 @@
-<h4>Welcome PM!</h4>
-<div class="cards">
-  <% @board.each do |result| %>
-    <div class="card_content">
-      <h3><%= result.name %><br> </h3>
-      Card ID: <%= result.id %><br>
-      Last Activity: <%= result.dateLastActivity %><br>
-      <%= result.badges %><br>
-    </div>
-  <% end %>
-</div>
+<% if current_user %>
+  <h3>Welcome, <%= "#{current_user.first_name} #{current_user.last_name}" %></h3>
+  <%= link_to "Logout", logout_path %>
+  <div class="cards">
+    <% @board.each do |result| %>
+      <div class="card_content">
+        <h3><%= result.name %><br> </h3>
+        Card ID: <%= result.id %><br>
+        Last Activity: <%= result.dateLastActivity %><br>
+        <%= result.badges %><br>
+      </div>
+    <% end %>
+  </div>
+<% else %>
+  <%= link_to "Sign in with Google", "/auth/google" %>
+<% end %>

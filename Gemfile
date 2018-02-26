@@ -16,6 +16,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'faraday'
 gem 'bcrypt'
 gem 'figaro'
+gem 'omniauth-google-oauth2', '~> 0.2.1'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
